@@ -1,40 +1,41 @@
 <section class="h-100 d-flex">
+  <input type="checkbox" id="menu" class="d-none" checked>
   <aside class="sidebar d-flex flex-column justify-content-between">
     <nav>
-      <div class="logo d-flex justify-content-center p-3">
-        <h3>COUPONIC</h3>
-      </div>
+      <h3 class="logo d-flex justify-content-center p-3">
+        COUPONIC
+      </h3>
       <ul class="p-3">
-        <li class="nav-item nav-item pb-3">
-          <a href="" class="nav-link text-decoration-none text-dark">
+        <li class="nav-item  mb-2">
+          <a href="" class="nav-link text-decoration-none p-3">
             <span class="icon-dashboard"></span>
             <span class="nav-text ps-2">Dashboard</span>
           </a>
         </li>
 
-        <li class="nav-item pb-3">
-          <a href="" class="nav-link text-decoration-none text-dark">
+        <li class="nav-item mb-2">
+          <a href="" class="nav-link text-decoration-none p-3">
             <span class="icon-orders"></span>
             <span class="nav-text ps-2">Orders</span>
           </a>
         </li>
 
-        <li class="nav-item pb-3">
-          <a href="" class="nav-link text-decoration-none text-dark">
+        <li class="nav-item mb-2">
+          <a href="" class="nav-link text-decoration-none p-3">
             <span class="icon-customers"></span>
             <span class="nav-text ps-2">Customers</span>
           </a>
         </li>
 
-        <li class="nav-item pb-3">
-          <a href="" class="nav-link text-decoration-none text-dark">
+        <li class="nav-item mb-2">
+          <a href="" class="nav-link text-decoration-none p-3">
             <span class="icon-store"></span>
             <span class="nav-text ps-2">Stores</span>
           </a>
         </li>
 
-        <li class="nav-item pb-3">
-          <a href="" class="nav-link text-decoration-none text-dark">
+        <li class="nav-item mb-2">
+          <a href="" class="nav-link text-decoration-none p-3">
             <span class="icon-vouncher"></span>
             <span class="nav-text ps-2">Vouncher</span>
           </a>
@@ -44,14 +45,14 @@
 
     <nav>
       <ul class="ps-0">
-        <li class="nav-item pb-3">
-          <a href="" class="nav-link text-decoration-none text-dark">
+        <li class="nav-item mb-2">
+          <a href="" class="nav-link text-decoration-none p-3">
             <span class="icon-settings"></span>
             <span class="nav-text ps-2">Setting</span>
           </a>
         </li>
-        <li class="nav-item pb-3">
-          <a href="" class="nav-link text-decoration-none text-dark">
+        <li class="nav-item mb-2">
+          <a href="" class="nav-link text-decoration-none p-3">
             <span class="icon-help"></span>
             <span class="nav-text ps-2">Help</span>
           </a>
@@ -61,19 +62,63 @@
   </aside>
   <div class="d-flex flex-column flex-grow-1">
     <header class="header p-3 d-flex justify-content-between">
-      <div>
-        <label for="menu"><span class="icon-menu cursor-pointer pe-4 fs-5"></span></label>
-        <span class="fs-3">Dashboard</span>
+      <div class="d-flex align-items-center">
+        <label for="menu" id="toggle">
+          <span class="icon-menu cursor-pointer pe-4 fs-5"></span>
+        </label>
+        <h2 class="dashboard fs-3 d-none d-md-block">Dashboard</h2>
       </div>
       <div class="d-flex align-items-center">
-        <button class="btn text-secondary border-secondary">New Issue</button>
+        <button class="btn text-secondary border-secondary text-nowrap">+ New Issue</button>
         <button class="btn text-secondary border-secondary ms-3">Redeem</button>
-        <span class="icon-bell icon fs-4 ms-3"></span>
-        <img src="../assets/images/profile.jpg" alt="" class="profile ms-3">
+        <span class="icon-bell icon fs-4 ms-3 d-none d-md-block"></span>
+        <img src="../assets/images/profile.jpg" alt="" class="profile d-none d-md-block ms-3">
       </div>
     </header>
-    <section class="main-content bg-primary h-100">
-      main content
+    <section class="main-content bg-primary h-100 m-2 mt-0 p-4">
+      <div>
+        <div class="d-flex align-items-center">
+          <span class="icon-customers fs-5"></span>
+          <h5>Business Overview</h5>
+        </div>
+        <div class="row g-3">
+          <div class="card col-4">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+
+          <div class="card col-4">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+
+          <div class="card col-4">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+
+      </div>
+      <div>
+
+      </div>
     </section>
   </div>
 </section>

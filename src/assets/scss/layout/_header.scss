@@ -9,13 +9,10 @@
     border-radius: 50%;
     padding: 10px;
 }
-// .icon-bell{
-//     position: relative;
-//     ::after{
-//         position: absolute;
-//         top: 0;
-//         right: 0;
-//         background-color: red;
-//         color: red;
-//     }
-// }
+
+.dashboard{
+    @include media-breakpoint-down(sm){
+        position: absolute;
+        left: 70px;
+    }
+}
