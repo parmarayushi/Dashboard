@@ -1,6 +1,6 @@
 // Function styles goes here color classes map
 @each $key,
-$clr in $text-colors {
+$clr in $theme-colors {
     .text-#{$key} {
         color: $clr;
     }

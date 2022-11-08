@@ -1,21 +1,27 @@
 $primary:#f5f5f5;
 $secondary:#873eff;
 $success:#70b877;
-$heading: #52555f;
-$text: #9e9faa;
+$title: #6a6b73;
+$card: #cacacb;
 $card1: #ef79a3;
 $card2:#f7ca55;
 $card3: #637dc5;
+$white:#ffffff;
+$data:#afafb5;
 
-$link-color: $heading;
+// table
+$table-group-separator-color: transparent; 
 
-$text-colors:(
+$link-color: $title;
+
+$theme-colors:(
     "primary":$primary,
     "secondary":$secondary,
     "success":$success,
-    "heading":$heading,
-    "text":$text,
+    "title":$title,
+    "card":$card,
     "card1":$card1,
     "card2":$card2,
-    "card3":$card3
+    "card3":$card3,
+    "data":$data
 )

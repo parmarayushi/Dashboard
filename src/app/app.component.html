@@ -1,11 +1,11 @@
-<section class="h-100 d-flex">
-  <input type="checkbox" id="menu" class="d-none" checked>
-  <aside class="sidebar d-flex flex-column justify-content-between">
-    <nav>
-      <h3 class="logo d-flex justify-content-center p-3">
+<section class="h-100 d-flex overflow-hidden">
+  <input type="checkbox" id="menu" class="d-none">
+  <aside class="sidebar h-100 d-flex flex-column justify-content-between overflow-hidden">
+    <nav class="overflow-hidden d-flex flex-column">
+      <h3 class="brand d-flex justify-content-center p-3">
         COUPONIC
       </h3>
-      <ul class="p-3">
+      <ul class="p-3 overflow-auto">
         <li class="nav-item  mb-2">
           <a href="" class="nav-link text-decoration-none p-3">
             <span class="icon-dashboard"></span>
@@ -69,55 +69,293 @@
         <h2 class="dashboard fs-3 d-none d-md-block">Dashboard</h2>
       </div>
       <div class="d-flex align-items-center">
-        <button class="btn text-secondary border-secondary text-nowrap">+ New Issue</button>
-        <button class="btn text-secondary border-secondary ms-3">Redeem</button>
-        <span class="icon-bell icon fs-4 ms-3 d-none d-md-block"></span>
-        <img src="../assets/images/profile.jpg" alt="" class="profile d-none d-md-block ms-3">
+        <button class="btn button-header border-secondary text-nowrap">+ New Issue</button>
+        <button class="btn button-header border-secondary ms-3">Redeem</button>
+        <span class="icon-bell notification fs-4 ms-3 d-none d-md-block"></span>
+        <img src="../assets/images/profile.jpg" alt="profile" class="profile d-none d-md-block ms-3">
       </div>
     </header>
-    <section class="main-content bg-primary h-100 m-2 mt-0 p-4">
+    <section class="bg-primary h-100 m-2 mt-0 p-4 overflow-auto">
       <div>
-        <div class="d-flex align-items-center">
-          <span class="icon-customers fs-5"></span>
-          <h5>Business Overview</h5>
+        <div class="d-flex align-items-center text-title fs-4">
+          <h5 class="mb-0">Business Overview</h5>
         </div>
-        <div class="row g-3">
-          <div class="card col-4">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
+        <div class="row g-4 mt-2">
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="card border-0">
+              <div class="card-body d-flex card-bg-card1 p-4">
+                <span class="icon-orders card-logo d-flex align-items-center p-4 fs-4"></span>
+                <div class="d-flex flex-column justify-content-center ps-4 ">
+                  <h3 class="card-title">$5,240</h3>
+                  <h6 class="card-subtitle mb-2 text-card"> Earned this Month</h6>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="card col-4">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="card border-0">
+              <div class="card-body d-flex card-bg-card2 p-4">
+                <span class="icon-customers card-logo d-flex align-items-center p-4 fs-4"></span>
+                <div class="d-flex flex-column justify-content-center ps-4">
+                  <h3 class="card-title">3045</h3>
+                  <h6 class="card-subtitle mb-2 text-card">Monthly Visitors</h6>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="card col-4">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="card border-0">
+              <div class="card-body d-flex card-bg-card3 p-4">
+                <span class="icon-vouncher card-logo d-flex align-items-center p-4 fs-4"></span>
+                <div class="d-flex flex-column justify-content-center ps-4">
+                  <h3 class="card-title">3045</h3>
+                  <h6 class="card-subtitle mb-2 text-card"> Vouncher Issued</h6>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div>
 
+      <div class="row g-4 mt-2">
+        <div class="col-12 col-xl-8">
+          <div class="d-flex align-items-center justify-content-between text-title fs-4 mb-4">
+            <h5>Store Overview</h5>
+            <a href="#" class="fs-6 text-secondary text-decoration-none">View All <span
+                class="icon-arrow-right"></span></a>
+          </div>
+          <div class="table-wrapper border-0 overflow-hidden">
+            <div class="overflow-auto h-100 p-0">
+              <table class="table mb-0 position-relative">
+                <thead>
+                  <tr class="text-title table-header">
+                    <th scope="col">Order Number</th>
+                    <th scope="col">Customer</th>
+                    <th scope="col">Total</th>
+                    <th scope="col">Paid</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody class="text-data bg-white">
+                  <tr>
+                    <th>634534</th>
+                    <td>Murphy Kattey</td>
+                    <td class="text-secondary">13.24EUR</td>
+                    <td>Yes</td>
+                    <td>Open</td>
+                    <td>
+                      <span class="icon-edit pe-3"></span>
+                      <span class="icon-delete"></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>678534</th>
+                    <td>Murphy Kattey</td>
+                    <td class="text-secondary">13.24EUR</td>
+                    <td>Yes</td>
+                    <td>Open</td>
+                    <td>
+                      <span class="icon-edit pe-3"></span>
+                      <span class="icon-delete"></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>675342</th>
+                    <td>Murphy Kattey</td>
+                    <td class="text-secondary">13.24EUR</td>
+                    <td>Yes</td>
+                    <td>Open</td>
+                    <td>
+                      <span class="icon-edit pe-3"></span>
+                      <span class="icon-delete"></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>986372</th>
+                    <td>Murphy Kattey</td>
+                    <td class="text-secondary">13.24EUR</td>
+                    <td>Yes</td>
+                    <td>Open</td>
+                    <td>
+                      <span class="icon-edit pe-3"></span>
+                      <span class="icon-delete"></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>634534</th>
+                    <td>Murphy Kattey</td>
+                    <td class="text-secondary">13.24EUR</td>
+                    <td>Yes</td>
+                    <td>Open</td>
+                    <td>
+                      <span class="icon-edit pe-3"></span>
+                      <span class="icon-delete"></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>634534</th>
+                    <td>Murphy Kattey</td>
+                    <td class="text-secondary">13.24EUR</td>
+                    <td>Yes</td>
+                    <td>Open</td>
+                    <td>
+                      <span class="icon-edit pe-3"></span>
+                      <span class="icon-delete"></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>634534</th>
+                    <td>Murphy Kattey</td>
+                    <td class="text-secondary">13.24EUR</td>
+                    <td>Yes</td>
+                    <td>Open</td>
+                    <td>
+                      <span class="icon-edit pe-3"></span>
+                      <span class="icon-delete"></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>634534</th>
+                    <td>Murphy Kattey</td>
+                    <td class="text-secondary">13.24EUR</td>
+                    <td>Yes</td>
+                    <td>Open</td>
+                    <td>
+                      <span class="icon-edit pe-3"></span>
+                      <span class="icon-delete"></span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-xl-4">
+          <div class="d-flex align-items-center justify-content-between text-title fs-4 mb-4">
+            <h5>Top Customers</h5>
+            <a href="#" class="fs-6 text-secondary text-decoration-none">View All <span
+                class="icon-arrow-right"></span></a>
+          </div>
+          <div class="table-wrapper border-0 overflow-hidden">
+            <div class="overflow-auto h-100 p-0">
+              <table class="table mb-0 position-relative">
+                <thead>
+                  <tr class="text-title table-header">
+                    <th scope="col">Customer</th>
+                    <th scope="col">Company</th>
+                  </tr>
+                </thead>
+                <tbody class="text-data bg-white">
+                  <tr>
+                    <th>634534</th>
+                    <td>Murphy Kattey</td>
+                  </tr>
+                  <tr>
+                    <th>634534</th>
+                    <td>Murphy Kattey</td>
+                  </tr>
+                  <tr>
+                    <th>634534</th>
+                    <td>Murphy Kattey</td>
+                  </tr>
+                  <tr>
+                    <th>678534</th>
+                    <td>Murphy Kattey</td>
+                  </tr>
+                  <tr>
+                    <th>675342</th>
+                    <td>Murphy Kattey</td>
+                  </tr>
+                  <tr>
+                    <th>986372</th>
+                    <td>Murphy Kattey</td>
+                  </tr>
+                  <tr>
+                    <th>634534</th>
+                    <td>Murphy Kattey</td>
+                  </tr>
+                  <tr>
+                    <th>634534</th>
+                    <td>Murphy Kattey</td>
+                  </tr>
+                  <tr>
+                    <th>634534</th>
+                    <td>Murphy Kattey</td>
+                  </tr>
+                  <tr>
+                    <th>634534</th>
+                    <td>Murphy Kattey</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
       </div>
-      <div>
 
+      <div class="row g-4 mt-2">
+        <div class="d-flex align-items-center justify-content-between text-title fs-4 mb-4">
+          <h5>Store Overview</h5>
+          <a href="#" class="fs-6 text-secondary text-decoration-none">View All <span
+              class="icon-arrow-right"></span></a>
+        </div>
+        <div class="col-12 col-xl-6 mt-0">
+          <div class="card border-0">
+            <div class="card-body d-flex">
+                <img src="../assets/images/starbucks.png" alt="starbucks" class="logo">
+                <div class="d-flex flex-column flex-grow-1 justify-content-center ps-4 ">
+                  <h5 class="card-title text-title">Starbucks</h5>
+                  <div class="d-xl-flex justify-content-between mt-3">
+                    <div class="card-subtitle mb-2 d-flex align-items-center">
+                      <span class="icon-store icon d-flex align-items-center justify-content-center rounded"></span>
+                      <div class="ps-3">
+                        <h6 class="text-data text-nowrap">Total Sales</h6>
+                        <h6>$2,340</h6>
+                      </div>
+                    </div>
+                    <div class="card-subtitle mb-2 d-flex align-items-center">
+                      <span class="icon-vouncher icon d-flex align-items-center justify-content-center rounded"></span>
+                      <div class="ps-3">
+                        <h6 class="text-data text-nowrap">Vouncher Offered</h6>
+                        <h6>24</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-xl-6 mt-0">
+          <div class="card border-0 mt-3 mt-xl-0">
+            <div class="card-body d-flex">
+                <img src="../assets/images/mcd.png" alt="starbucks" class="logo">
+                <div class="d-flex flex-column flex-grow-1 justify-content-center ps-4 ">
+                  <h5 class="card-title text-title">Mc Donald's</h5>
+                  <div class="d-xl-flex justify-content-between mt-3">
+                    <div class="card-subtitle mb-2 d-flex align-items-center">
+                      <span class="icon-store icon d-flex align-items-center justify-content-center rounded"></span>
+                      <div class="ps-3">
+                        <h6 class="text-data text-nowrap">Total Sales</h6>
+                        <h6>$2,340</h6>
+                      </div>
+                    </div>
+                    <div class="card-subtitle mb-2 d-flex align-items-center">
+                      <span class="icon-vouncher icon d-flex align-items-center justify-content-center rounded"></span>
+                      <div class="ps-3">
+                        <h6 class="text-data text-nowrap">Vouncher Offered</h6>
+                        <h6>24</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </div>

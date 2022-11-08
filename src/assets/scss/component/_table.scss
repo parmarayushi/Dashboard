@@ -1,0 +1,9 @@
+.table-wrapper{
+    height: 300px;
+    border-radius: 20px;
+    .table-header {
+        position: sticky;
+        top: -1px;
+        background-color: $white;
+    }
+}

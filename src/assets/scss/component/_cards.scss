@@ -1,0 +1,40 @@
+@each $key,
+$value in $theme-colors {
+    .card {
+        border-radius: 20px;
+    }
+
+    .card-bg-#{$key} {
+        .card-logo {
+            border-radius: 20px;
+            background-color: rgba($value, 0.12);
+            color: $value;
+        }
+
+        &.card-body {
+            border-radius: 20px;
+            transition: 0.6s all ease;
+
+            &:hover {
+                background-color: $value;
+
+                .card-logo {
+                    background-color: lighten($color: $value, $amount: 20%);
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+.logo{
+    height: 90px;
+    width: 90px;
+    border-radius: 20px;
+}
+
+.icon{
+    background-color: $primary;
+    height: 30px;
+    width: 30px;
+}

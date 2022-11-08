@@ -1,1 +1,19 @@
 // Button styles goes here
+.button-header{
+    color: $secondary;
+    &:hover{
+        color: $white;
+        background-color: $secondary;
+    }
+}
+
+.button-card{
+    padding:  0.375rem 9.75rem;
+    border-radius: 10px;
+    color: $success;
+    background-color: #f1f9f2;
+    &:hover{
+        color: $white ;
+        background-color: $success;
+    }
+}
